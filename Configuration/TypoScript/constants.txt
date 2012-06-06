@@ -14,5 +14,9 @@ plugin.tx_simplyslideshow {
 	settings {
 		# cat=plugin.tx_simplyslideshow//a; type=boolean; label=Include the jQuery Cycle plugin
 		includeJQueryCycle = 1
+		# cat=plugin.tx_simplyslideshow//a; type=int+; label=Default width
+		defaultWidth = 960
+		# cat=plugin.tx_simplyslideshow//a; type=int+; label=Default height
+		defaultHeight = 300
 	}
 }

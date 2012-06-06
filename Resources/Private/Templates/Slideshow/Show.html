@@ -1,21 +1,11 @@
 <f:layout name="Default" />
-
-This Template is responsible for displaying a single view for a domain object
-
-If you modify this template, do not forget to change the overwrite settings
-in /Configuration/ExtensionBuilder/settings.yaml:
-  Resources:
-    Private:
-      Templates:
-        Show.html: keep
-
-Otherwise your changes will be overwritten the next time you save the extension in the extension builder
-
 <f:section name="main">
-<h1>Single View for Slideshow</h1>
-
 <f:flashMessages />
-<f:render partial="Slideshow/Properties" arguments="{slideshow:slideshow}" />
-<f:link.action action="list">Back to list</f:link.action><br />
-<f:link.action action="new">New Slideshow</f:link.action>
+	<f:if condition="{slideshow.images}">
+		<ul id="ss{slideshow.uid}" class="unstyled">
+			<f:for each="{slideshow.images}" as="image">
+				<f:render partial="Image/Properties" arguments="{slideshow:slideshow, image:image}" />
+			</f:for>
+		</ul>
+	</f:if>
 </f:section>

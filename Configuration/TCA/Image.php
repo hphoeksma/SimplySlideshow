@@ -9,7 +9,7 @@ $TCA['tx_simplyslideshow_domain_model_image'] = array(
 		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, image, uri',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, image, uri,--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,starttime, endtime'),
+		'1' => array('showitem' => 'image, uri,--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access, sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, starttime, endtime'),
 	),
 	'palettes' => array(
 		'1' => array('showitem' => ''),
@@ -101,7 +101,7 @@ $TCA['tx_simplyslideshow_domain_model_image'] = array(
 				'internal_type' => 'file',
 				'uploadfolder' => 'uploads/tx_simplyslideshow',
 				'show_thumbs' => 1,
-				'size' => 5,
+				'size' => 1,
 				'allowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
 				'disallowed' => '',
 			),

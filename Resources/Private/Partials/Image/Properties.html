@@ -1,18 +1,5 @@
-<table class="tx-simply-slideshow" >
-	<tr>
-		<td>
-			<f:translate key="tx_simplyslideshow_domain_model_image.image" />
-		</td>
-		<td>
-			{image.image}
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<f:translate key="tx_simplyslideshow_domain_model_image.uri" />
-		</td>
-		<td>
-			{image.uri}
-		</td>
-	</tr>
-</table>
+<li>
+	<f:image src="uploads/tx_simplyslideshow/{image.image}"
+			width="{f:if(condition:'{slideshow.width}', then:'{slideshow.width}', else:'{settings.defaultWith}')}"
+			height="{f:if(condition:'{slideshow.height}', then:'{slideshow.height}', else:'{settings.defaultHeight}')}c" alt="" />
+</li>
