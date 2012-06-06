@@ -9,10 +9,10 @@ $TCA['tx_simplyslideshow_domain_model_slideshow'] = array(
 		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, name, width, height, images',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, name, width, height, images,--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,starttime, endtime'),
+		'1' => array('showitem' => 'name;;1, images,--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access, sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, starttime, endtime'),
 	),
 	'palettes' => array(
-		'1' => array('showitem' => ''),
+		'1' => array('showitem' => 'width, height', 'canNotCollapse' => TRUE),
 	),
 	'columns' => array(
 		'sys_language_uid' => array(
@@ -133,7 +133,8 @@ $TCA['tx_simplyslideshow_domain_model_slideshow'] = array(
 					'levelLinksPosition' => 'top',
 					'showSynchronizationLink' => 1,
 					'showPossibleLocalizationRecords' => 1,
-					'showAllLocalizationLink' => 1
+					'showAllLocalizationLink' => 1,
+					'useSortable' => 1,
 				),
 			),
 		),

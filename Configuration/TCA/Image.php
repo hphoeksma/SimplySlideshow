@@ -111,9 +111,22 @@ $TCA['tx_simplyslideshow_domain_model_image'] = array(
 			'label' => 'LLL:EXT:simply_slideshow/Resources/Private/Language/locallang_db.xml:tx_simplyslideshow_domain_model_image.uri',
 			'config' => array(
 				'type' => 'input',
-				'size' => 30,
-				'eval' => 'trim'
-			),
+				'size' => 20,
+				'eval' => 'trim',
+				'wizards' => array(
+					'_PADDING' => 2,
+					'link' => array (
+						'type' => 'popup',
+						'title' => 'Link',
+						'icon' => 'link_popup.gif',
+						'script' => 'browse_links.php?mode=wizard&amp;act=page',
+						'params' => array (
+							'blindLinkOptions' => 'folder,mail,file',
+						),
+						'JSopenParams' => 'height=300,width=500,status=0,menubar=0,scrollbars=1'
+					)
+				)
+			)
 		),
 		'slideshow' => array(
 			'config' => array(

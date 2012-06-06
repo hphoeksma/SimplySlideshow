@@ -70,7 +70,8 @@ class Tx_SimplySlideshow_Controller_SlideshowController extends Tx_Extbase_MVC_C
 			// Set JS if needed
 		if($this->settings['includeJQueryCycle']) {
 			$pageRenderer = $GLOBALS['TSFE']->getPageRenderer();
-			$pageRenderer->addJsFooterLibrary('jquerycycle', t3lib_div::getFileAbsFileName('EXT:simply_slideshow/Resources/Public/JavaScript/jquery.cycle.all.js'));
+			$pageRenderer->addJsFooterLibrary('jquerycycle', 'typo3conf/ext/simply_slideshow/Resources/Public/JavaScript/jquery.cycle.all.js');
+			$pageRenderer->addJsFooterLibrary('simplyslideshow', 'typo3conf/ext/simply_slideshow/Resources/Public/JavaScript/simplyslideshow.js');
 		}
 			// Get slideshow if set
 		if(($slideshow === NULL) && ($this->settings['slideshow'] > '0')) {

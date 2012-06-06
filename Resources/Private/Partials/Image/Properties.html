@@ -1,5 +1,7 @@
 <li>
+	<f:if condition="{image.uri}"><a href="{f:cObject(typoscriptObjectPath:'lib.simplyImageLink',data:'{image.uri}')}"></f:if>
 	<f:image src="uploads/tx_simplyslideshow/{image.image}"
 			width="{f:if(condition:'{slideshow.width}', then:'{slideshow.width}', else:'{settings.defaultWith}')}"
 			height="{f:if(condition:'{slideshow.height}', then:'{slideshow.height}', else:'{settings.defaultHeight}')}c" alt="" />
+	<f:if condition="{image.uri}"></a></f:if>
 </li>
