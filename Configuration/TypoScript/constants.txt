@@ -1,0 +1,14 @@
+plugin.tx_simplyslideshow {
+	view {
+		# cat=plugin.tx_simplyslideshow/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:simply_slideshow/Resources/Private/Templates/
+		# cat=plugin.tx_simplyslideshow/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:simply_slideshow/Resources/Private/Partials/
+		# cat=plugin.tx_simplyslideshow/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:simply_slideshow/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_simplyslideshow//a; type=int+; label=Default storage PID
+		storagePid = 
+	}
+}

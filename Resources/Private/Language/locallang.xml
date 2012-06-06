@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the Slideshow extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_simplyslideshow_domain_model_slideshow">Slideshow</label>
+			<label index="tx_simplyslideshow_domain_model_slideshow.name">Slideshow name</label>
+			<label index="tx_simplyslideshow_domain_model_slideshow.width">Width of the slideshow</label>
+			<label index="tx_simplyslideshow_domain_model_slideshow.height">Height of the slideshow</label>
+			<label index="tx_simplyslideshow_domain_model_slideshow.images">Images</label>
+			<label index="tx_simplyslideshow_domain_model_image">Image</label>
+			<label index="tx_simplyslideshow_domain_model_image.image">Image</label>
+			<label index="tx_simplyslideshow_domain_model_image.uri">Link</label>
+		</languageKey>
+	</data>
+</T3locallang>
