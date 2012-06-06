@@ -14,6 +14,7 @@
 			<label index="tx_simplyslideshow_domain_model_image">Image</label>
 			<label index="tx_simplyslideshow_domain_model_image.image">Image</label>
 			<label index="tx_simplyslideshow_domain_model_image.uri">Link</label>
+			<label index="error.noSlideshowChosen">There is no slideshow chosen in the plugin configuration!</label>
 		</languageKey>
 	</data>
 </T3locallang>

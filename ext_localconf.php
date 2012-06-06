@@ -7,7 +7,7 @@ Tx_Extbase_Utility_Extension::configurePlugin(
 	$_EXTKEY,
 	'Pi1',
 	array(
-		'Slideshow' => 'list, show',
+		'Slideshow' => 'show, list',
 		'Image' => 'list, show',
 		
 	),

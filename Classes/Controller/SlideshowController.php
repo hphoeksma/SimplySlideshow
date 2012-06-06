@@ -66,7 +66,18 @@ class Tx_SimplySlideshow_Controller_SlideshowController extends Tx_Extbase_MVC_C
 	 * @param $slideshow
 	 * @return void
 	 */
-	public function showAction(Tx_SimplySlideshow_Domain_Model_Slideshow $slideshow) {
+	public function showAction(Tx_SimplySlideshow_Domain_Model_Slideshow $slideshow = NULL) {
+			// Set JS if needed
+		if($this->settings['includeJQueryCycle']) {
+			$pageRenderer = $GLOBALS['TSFE']->getPageRenderer();
+			$pageRenderer->addJsFooterLibrary('jquerycycle', t3lib_div::getFileAbsFileName('EXT:simply_slideshow/Resources/Public/JavaScript/jquery.cycle.all.js'));
+		}
+			// Get slideshow if set
+		if(($slideshow === NULL) && ($this->settings['slideshow'] > '0')) {
+			$slideshow = $this->slideshowRepository->findByUid($this->settings['slideshow']);
+		} else {
+			$this->flashMessageContainer->add(Tx_Extbase_Utility_Localization::translate('error.noSlideshowChosen', $this->extensionName), '', t3lib_FlashMessage::WARNING);
+		}
 		$this->view->assign('slideshow', $slideshow);
 	}
 

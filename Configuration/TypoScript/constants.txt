@@ -11,4 +11,8 @@ plugin.tx_simplyslideshow {
 		# cat=plugin.tx_simplyslideshow//a; type=int+; label=Default storage PID
 		storagePid = 
 	}
+	settings {
+		# cat=plugin.tx_simplyslideshow//a; type=boolean; label=Include the jQuery Cycle plugin
+		includeJQueryCycle = 1
+	}
 }
