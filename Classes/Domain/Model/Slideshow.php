@@ -169,7 +169,7 @@ class Tx_SimplySlideshow_Domain_Model_Slideshow extends Tx_Extbase_DomainObject_
 	 * @return Tx_Extbase_Persistence_ObjectStorage<Tx_SimplySlideshow_Domain_Model_Image> $images
 	 */
 	public function getImages() {
-		return $this->images;
+		return  Tx_SimplySlideshow_Utility_Array::sortBySorting($this->images->toArray());
 	}
 
 	/**

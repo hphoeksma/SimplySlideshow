@@ -83,6 +83,7 @@ class Tx_SimplySlideshow_Controller_SlideshowController extends Tx_Extbase_MVC_C
 		if(!$slideshow->getImages()) {
 			$this->flashMessageContainer->add(Tx_Extbase_Utility_Localization::translate('error.noImagesFound', $this->extensionName), '', t3lib_FlashMessage::WARNING);
 		}
+
 		$this->view->assign('slideshow', $slideshow);
 	}
 

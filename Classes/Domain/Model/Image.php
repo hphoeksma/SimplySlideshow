@@ -49,6 +49,11 @@ class Tx_SimplySlideshow_Domain_Model_Image extends Tx_Extbase_DomainObject_Abst
 	protected $uri;
 
 	/**
+	 * @var integer
+	 */
+	protected $sorting;
+
+	/**
 	 * Returns the image
 	 *
 	 * @return string $image
@@ -84,6 +89,20 @@ class Tx_SimplySlideshow_Domain_Model_Image extends Tx_Extbase_DomainObject_Abst
 	 */
 	public function setUri($uri) {
 		$this->uri = $uri;
+	}
+
+	/**
+	 * @param int $sorting
+	 */
+	public function setSorting($sorting) {
+		$this->sorting = $sorting;
+	}
+
+	/**
+	 * @return int
+	 */
+	public function getSorting() {
+		return $this->sorting;
 	}
 
 }
