@@ -63,7 +63,7 @@ class Tx_SimplySlideshow_Controller_SlideshowController extends Tx_Extbase_MVC_C
 	/**
 	 * action show
 	 *
-	 * @param $slideshow
+	 * @param null|Tx_SimplySlideshow_Domain_Model_Slideshow $slideshow
 	 * @return void
 	 */
 	public function showAction(Tx_SimplySlideshow_Domain_Model_Slideshow $slideshow = NULL) {
@@ -80,8 +80,10 @@ class Tx_SimplySlideshow_Controller_SlideshowController extends Tx_Extbase_MVC_C
 			$this->flashMessageContainer->add(Tx_Extbase_Utility_Localization::translate('error.noSlideshowChosen', $this->extensionName), '', t3lib_FlashMessage::WARNING);
 		}
 			// Show a warning if no images are attached
-		if(!$slideshow->getImages()) {
-			$this->flashMessageContainer->add(Tx_Extbase_Utility_Localization::translate('error.noImagesFound', $this->extensionName), '', t3lib_FlashMessage::WARNING);
+		if($slideshow) {
+			if(!$slideshow->getImages()) {
+				$this->flashMessageContainer->add(Tx_Extbase_Utility_Localization::translate('error.noImagesFound', $this->extensionName), '', t3lib_FlashMessage::WARNING);
+			}
 		}
 
 		$this->view->assign('slideshow', $slideshow);
