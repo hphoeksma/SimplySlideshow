@@ -23,7 +23,6 @@
 									</numIndex>
 								</items>
 								<foreign_table>tx_simplyslideshow_domain_model_slideshow</foreign_table>
-								<foreign_table_where>AND tx_simplyslideshow_domain_model_slideshow.sys_language_uid=###REC_FIELD_sys_language_uid###</foreign_table_where>
 								<size>1</size>
 								<minitems>0</minitems>
 								<maxitems>1</maxitems>
