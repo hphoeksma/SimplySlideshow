@@ -6,7 +6,7 @@ if (!defined ('TYPO3_MODE')) {
 $TCA['tx_simplyslideshow_domain_model_image'] = array(
 	'ctrl' => $TCA['tx_simplyslideshow_domain_model_image']['ctrl'],
 	'interface' => array(
-		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, image, uri',
+		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, image, uri, sorting',
 	),
 	'types' => array(
 		'1' => array('showitem' => 'image, uri,--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access, sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, starttime, endtime'),
@@ -59,6 +59,14 @@ $TCA['tx_simplyslideshow_domain_model_image'] = array(
 			'label' => 'LLL:EXT:lang/locallang_general.xml:LGL.hidden',
 			'config' => array(
 				'type' => 'check',
+			),
+		),
+		'sorting' => array(
+			'exclude' => 0,
+			'label' => 'LLL:EXT:lang/locallang_general.xml:LGL.sorting',
+			'config' => array(
+				'type' => 'input',
+				'eval' => 'int'
 			),
 		),
 		'starttime' => array(

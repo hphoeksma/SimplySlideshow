@@ -84,12 +84,3 @@ CREATE TABLE tx_simplyslideshow_domain_model_image (
 	KEY language (l10n_parent,sys_language_uid)
 
 );
-
-#
-# Table structure for table 'tx_simplyslideshow_domain_model_image'
-#
-CREATE TABLE tx_simplyslideshow_domain_model_image (
-
-	slideshow  int(11) unsigned DEFAULT '0' NOT NULL,
-
-);
