@@ -15,26 +15,6 @@ plugin.tx_simplyslideshow {
 	}
 }
 
-plugin.tx_simplyslideshow._CSS_DEFAULT_STYLE (
-	input.f3-form-error {
-		background-color:#FF9F9F;
-		border: 1px #FF0000 solid;
-	}
-
-	.tx-simply-slideshow table {
-		border-collapse:separate;
-		border-spacing:10px;
-	}
-
-	.tx-simply-slideshow table th {
-		font-weight:bold;
-	}
-
-	.tx-simply-slideshow table td {
-		vertical-align:top;
-	}
-)
-
 lib.simplyImageLink = TEXT
 lib.simplyImageLink {
 	typolink.parameter.current = 1
