@@ -9,7 +9,7 @@ $TCA['tx_simplyslideshow_domain_model_image'] = array(
 		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, image, caption, uri, sorting',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'image, uri,--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access, sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, starttime, endtime'),
+		'1' => array('showitem' => 'image, caption, uri,--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access, sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, starttime, endtime'),
 	),
 	'palettes' => array(
 		'1' => array('showitem' => ''),
