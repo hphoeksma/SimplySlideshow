@@ -42,6 +42,13 @@ class Tx_SimplySlideshow_Domain_Model_Image extends Tx_Extbase_DomainObject_Abst
 	protected $image;
 
 	/**
+	 * Caption
+	 *
+	 * @var string
+	 */
+	protected $caption;
+
+	/**
 	 * Link
 	 *
 	 * @var string
@@ -105,5 +112,18 @@ class Tx_SimplySlideshow_Domain_Model_Image extends Tx_Extbase_DomainObject_Abst
 		return $this->sorting;
 	}
 
+	/**
+	 * @param string $caption
+	 */
+	public function setCaption($caption) {
+		$this->caption = $caption;
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getCaption() {
+		return $this->caption;
+	}
 }
 ?>

@@ -14,6 +14,7 @@
 
 			<label index="tx_simplyslideshow_domain_model_image">Image</label>
 			<label index="tx_simplyslideshow_domain_model_image.image">Image</label>
+			<label index="tx_simplyslideshow_domain_model_image.caption">Caption</label>
 			<label index="tx_simplyslideshow_domain_model_image.uri">Uri</label>
 
 		</languageKey>

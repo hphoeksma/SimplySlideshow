@@ -6,7 +6,7 @@ if (!defined ('TYPO3_MODE')) {
 $TCA['tx_simplyslideshow_domain_model_image'] = array(
 	'ctrl' => $TCA['tx_simplyslideshow_domain_model_image']['ctrl'],
 	'interface' => array(
-		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, image, uri, sorting',
+		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, image, caption, uri, sorting',
 	),
 	'types' => array(
 		'1' => array('showitem' => 'image, uri,--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access, sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, starttime, endtime'),
@@ -114,8 +114,17 @@ $TCA['tx_simplyslideshow_domain_model_image'] = array(
 				'disallowed' => '',
 			),
 		),
-		'uri' => array(
+		'caption' => array(
 			'exclude' => 0,
+			'label' => 'LLL:EXT:simply_slideshow/Resources/Private/Language/locallang_db.xml:tx_simplyslideshow_domain_model_image.caption',
+			'config' => array(
+				'type' => 'input',
+				'size' => 30,
+				'eval' => 'trim'
+			),
+		),
+		'uri' => array(
+			'exclude' => 1,
 			'label' => 'LLL:EXT:simply_slideshow/Resources/Private/Language/locallang_db.xml:tx_simplyslideshow_domain_model_image.uri',
 			'config' => array(
 				'type' => 'input',
