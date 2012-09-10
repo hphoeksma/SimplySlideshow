@@ -103,7 +103,7 @@ $TCA['tx_simplyslideshow_domain_model_slideshow'] = array(
 			),
 		),
 		'width' => array(
-			'exclude' => 0,
+			'exclude' => 1,
 			'label' => 'LLL:EXT:simply_slideshow/Resources/Private/Language/locallang_db.xml:tx_simplyslideshow_domain_model_slideshow.width',
 			'config' => array(
 				'type' => 'input',
@@ -112,7 +112,7 @@ $TCA['tx_simplyslideshow_domain_model_slideshow'] = array(
 			),
 		),
 		'height' => array(
-			'exclude' => 0,
+			'exclude' => 1,
 			'label' => 'LLL:EXT:simply_slideshow/Resources/Private/Language/locallang_db.xml:tx_simplyslideshow_domain_model_slideshow.height',
 			'config' => array(
 				'type' => 'input',

@@ -115,7 +115,7 @@ $TCA['tx_simplyslideshow_domain_model_image'] = array(
 			),
 		),
 		'caption' => array(
-			'exclude' => 0,
+			'exclude' => 1,
 			'label' => 'LLL:EXT:simply_slideshow/Resources/Private/Language/locallang_db.xml:tx_simplyslideshow_domain_model_image.caption',
 			'config' => array(
 				'type' => 'input',
